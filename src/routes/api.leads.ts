@@ -15,7 +15,7 @@ const leadInput = z.object({
 
 // Destino externo que recebe cada cadastro (nome e número do cliente).
 const LEAD_WEBHOOK_URL =
-  process.env.LEAD_WEBHOOK_URL ?? 'https://qualimixcrm.lovable.app/funil'
+  process.env.LEAD_WEBHOOK_URL ?? 'https://qualimixcrm.lovable.app/api/webhooks/leads'
 
 async function forwardLead(nome: string, numero: string) {
   try {
